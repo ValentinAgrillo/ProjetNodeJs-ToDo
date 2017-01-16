@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1.text-center Tache a faire
+	.panel.panel-default
+		for todo in todos
+			.panel-body
+				a(href='/todos/#{todo._id}') #{todo.content}
+				form(action='/todos/destroy/#{todo._id}', method='post')
+					input.btn.btn-danger.pull-right(type='submit', value='')
+	form(method='post', action='/todos/create')
+		.input-group
+			input.form-control(type='text', placeholder='Entrez votre tache à faire?', name='content')
+			span.input-group-btn
+				input.btn.btn-success(type='submit', value='Ajouter tache')

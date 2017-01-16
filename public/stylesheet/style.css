@@ -1,0 +1,66 @@
+html {
+    padding: 0px;
+    margin: 0px;
+	background-image:url("../images/screen.png");
+	background-repeat:no-repeat;
+	background-position: top;
+	background-size:cover;
+}
+
+body {
+    width: 1024px;
+    margin-left: 20%;
+    margin-top: 50px;
+    font: 25px "Lucida Grande", sans-serif;
+    color: black;
+    
+}
+
+.panel {
+    border: black solid 1px;
+    margin-bottom: 20px;
+}
+
+.panel-body {
+    height: 50px;
+    vertical-align: baseline;
+    border: black solid 1px;
+    margin: 15px;
+}
+
+.text-center {
+    text-align: center;
+   
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: black;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.pull-right {
+    float: right;
+    background-image: url("../images/Trash.jpg");
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+form {
+    display: initial;
+}
+
+.form-control {
+    width: 400px;
+}
